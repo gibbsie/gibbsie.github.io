@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Random technical muses of Oliver Gibbs
+description: Random technical musings of Oliver Gibbs
 author:
   name: Oliver Gibbs
   email:
@@ -92,10 +92,7 @@ defaults:
 
 social_icons:
   - Facebook
-  - Instagram
   - LinkedIn
-  - Pinterest
-  - Tumblr
   - Twitter
   - YouTube
   - Email
