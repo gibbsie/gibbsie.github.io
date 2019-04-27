@@ -1,7 +1,7 @@
 ---
-title: Adopting Cloud at an Accelerated Speed
+title: Adopting Cloud at Accelerated Speed
 date: 2019-03-20
-description: Leveraging AWS WAF to build out an advanced edge protection.
+description: Leveraging an established framework to achieve business value, faster.
 categories:
   - aws
   - cloud
@@ -10,9 +10,9 @@ image: https://source.unsplash.com/AJqeO_-ifx0/2000x1322?a=.png
 author_staff_member: oliver
 ---
 
-When approaching the notion of adopting Cloud, it can be a daunting task. You're faced with establishing a strategy, an approach, commercials, governance, operational changes, people skills. Where do you begin?
+When approaching the notion of adopting Cloud, it can be a daunting task. You're faced with establishing a strategy, identifying your approach, commercials, governance, operational changes, people skills. Where do you begin?
 
-Based on the numerous adoptions I've worked through, I recommend using the AWS Cloud Adoption Framework as a guiding light to help illustrate a path through some of these decisions.
+Based on the numerous adoptions I've worked through, I recommend leveraging the AWS Cloud Adoption Framework as a guide to establishing a pathway through some of these decisions and realising business value, faster.
 
 ## What is the AWS Cloud Adoption Framework?
 
