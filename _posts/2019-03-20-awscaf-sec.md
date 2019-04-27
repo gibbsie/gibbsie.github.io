@@ -139,9 +139,6 @@ Common Roles: CISO; IT Security Managers; IT Security Analysts.
 
 ### Capabilities
 
-+------------+-------------+
-| Capability | Description |
-+------------+-------------+
 | Identity and Access Management (IAM) | helps you integrate AWS into your identity management lifecycle, and sources of authentication and authorization. |
 | Detective Control | provides guidance to help identify potential security incidents within your AWS environment. |
 | Infrastructure Security | helps you implement control methodologies necessary to comply with best practices as well as meet industry or regulatory obligations. |
