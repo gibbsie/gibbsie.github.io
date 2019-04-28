@@ -32,8 +32,6 @@ The Business Perspective helps you move from separate strategies for business an
 
 Common Roles: Business Managers; Finance Managers; Budget Owners; Strategy Stakeholders.
 
-# Business Capabilities
-
 ## Business Perspective
 
 ### Capabilities
@@ -87,8 +85,6 @@ Common Roles: CIO; Program Managers; Project Managers; Enterprise Architects; Bu
 
 - [Blog: 3 Shortcuts to Accelerate Your Cloud Migration and IT Portfolio Analysis](https://medium.com/aws-enterprise-collection/3-shortcuts-to-accelerate-your-cloud-migration-and-it-portfolio-analysis-4dcace5b4332)
 - [Re:Invent Presentation: Enterprise Innovation at Start-up Speed](https://www.linkedin.com/pulse/enterprise-innovation-start-up-speed-eric-tachibana/)
-
-# Technology Capabilities
 
 ## Platform Perspective
 
