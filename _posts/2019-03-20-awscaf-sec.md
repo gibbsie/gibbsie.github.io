@@ -28,11 +28,13 @@ The AWS Cloud Adoption Framework (AWS CAF) organises guidance into six areas of 
 
 ![Cloud Adoption Framework](https://d1.awsstatic.com/Education/CAF%20Perspectives%20Framework.6885640b042b170b49827beb9cbcaf10835866e0.png)
 
+Let's briefly introduce each of the six perspectives.
+
+## Business Perspective
+
 The Business Perspective helps you move from separate strategies for business and IT to a business model that integrates IT strategy. Agile IT strategies are aligned to support your business outcomes, and they can adjust to business needs or technical capabilities as they change.
 
 Common Roles: Business Managers; Finance Managers; Budget Owners; Strategy Stakeholders.
-
-## Business Perspective
 
 ### Capabilities
 
