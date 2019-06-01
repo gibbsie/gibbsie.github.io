@@ -42,7 +42,9 @@ Do not worry, upgrading is simple and smooth sailing.
 
 To install, you will first need to decide whether you are going to install GNU bash via a package or compile from source. In the interest of time and simplicity, I will discuss installing GNU bash v5.0 using [Homebrew](http://brew.sh/), which you're probably already using.
 
-`$ brew install bash`
+{% highlight shell %}
+$ brew install bash
+{% endhighlight %}
 
 ...and you're done! Well, kind of but not quite. Let's look at what's happened.
 
@@ -68,9 +70,11 @@ There is NO WARRANTY, to the extent permitted by law.
 
 and
 
-``$ /bin/bash --version``
-``GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)``
-``Copyright (C) 2007 Free Software Foundation, Inc.``
+{% highlight shell %}
+$ /bin/bash --version
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
+{% endhighlight %}
 
 So it's clear here that `/bin/bash` is our stock version of GNU bash, supplied by Apple macOS. The version installed by `brew` is `/usr/local/bin/bash`.
 
@@ -82,11 +86,15 @@ Yes, congratulations. You'll probably log out and log back in and realise your s
 
 UNIX provides a security feature that restricts the shells that can be used by users to a trusted, known list of login shells. As everything in UNIX is a file, the file in question is the `/etc/shells` file. To allow the new version of GNU bash be your login shell, you must update this file.
 
-`$ sudo echo "/usr/local/bin/bash" >> /etc/shells`
+{% highlight shell %}
+$ sudo echo "/usr/local/bin/bash" >> /etc/shells
+{% endhighlight %}
 
 Now that this has been updated, you'd soon realise that `/bin/bash` is still the default shell, not the later version installed. This is because your user profile needs to be updated to use the new shell.
 
-`$ chsh -s /usr/local/bin/bash`
+{% highlight shell %}
+$ chsh -s /usr/local/bin/bash
+{% endhighlight %}
 
 The shell used by your user profile has now been updated to `/usr/local/bin/bash` which is the new GNU bash release installed. Note that this change is only for your current user profile.
 
@@ -102,13 +110,17 @@ As we've seen, you have two versions of GNU bash installed and these will happil
 
 When you write shell scripts, bare in mind you have two versions of bash installed and which version is which. In particular, keep close attention to the shebang of bash scripts:
 
-`#!/bin/bash``
-``echo $BASH_VERSION`
+{% highlight shell %}
+#!/bin/bash
+echo $BASH_VERSION
+{% endhighlight %}
 
 The above script looks basic enough but the shebang explicitly requests the stock version of GNU bash installed on macOS. This can be easily ovrercome by specifying `/usr/local/bin/bash` instead. However, a more elegant way is using the `/usr/bin/env` binary.
 
-`#!/usr/bin/env bash``
-``echo $BASH_VERSION`
+{% highlight shell %}
+#!/usr/bin/env bash
+echo $BASH_VERSION
+{% endhighlight %}
 
 This version of the same script leverages `/usr/bin/env` and requests the bash shell, which inspects the `PATH` environment variable and, as mentioned earlier, will find `/usr/local/bin/bash` before `/bin/bash`.
 
@@ -118,8 +130,10 @@ This version of the same script leverages `/usr/bin/env` and requests the bash s
 
 A colleague of mine asked why not simply delete the stock version of bash and symlink the new. This might look like the below. Please do not execute these:
 
-`$ sudo rm /bin/bash``
-``$ sudo ln -s /usr/local/bin/bash /bin/bash`
+{% highlight shell %}
+$ sudo rm /bin/bash
+$ sudo ln -s /usr/local/bin/bash /bin/bash
+{% endhighlight %}
 
 Whilst this idea attempts to remove the multiple version of GNU bash installed and shell scripts would in theory leverage a newer GNU bash, it presents another problem.
 
