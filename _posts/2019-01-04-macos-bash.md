@@ -1,12 +1,12 @@
 ---
 title: Bourne Again: uplifting the macOS bash shell
-date: 2019-04-24
+date: 2019-01-04
 description: Upgrading macOS to have a later revision of bash shell
 categories:
   - macOS
   - term
   - bash
-image: https://source.unsplash.com/OKOOGO578eo/2000x1322?a=.png
+image: https://source.unsplash.com/Agx5_TLsIf4/2000x1322?a=.png
 author_staff_member: oliver
 ---
 
