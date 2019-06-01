@@ -34,7 +34,7 @@ GNU bash v3.2.57(1) probably works just fine for most people. For me, the main r
 
 Do not worry, upgrading is simple and smooth sailing.
 
-![Drop in the Ocean?](https://source.unsplash.com/eIhH7RTlTZA/1500x1000?a=.png)
+![Drop in the Ocean?](https://source.unsplash.com/DKix6Un55mw/1500x1000?a=.png)
 
 # Installing GNU bash v5.0 on macOS
 
