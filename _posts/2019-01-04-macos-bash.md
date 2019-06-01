@@ -14,9 +14,9 @@ Apple laptop and desktops have remained a popular choice for developers. Being b
 
 This is a valid question to ask and you may be extremely comfortable with the stock version of bash that is installed by default with macOS. In macOS Mojave (10.14.5), the version of bash is:
 
-`$ /bin/bash --version
-GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
-Copyright (C) 2007 Free Software Foundation, Inc.`
+`$ /bin/bash --version``
+``GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)``
+``Copyright (C) 2007 Free Software Foundation, Inc.`
 
 As you can see from the output, the version installed is GNU bash v.3.2.57(1)-release. As the copyright clearly states, this version of GNU bash dates back to 2007. As it's currently 2019, a lot can happen in 12 years, especially in computing and security.
 
@@ -46,25 +46,25 @@ To install, you will first need to decide whether you are going to install GNU b
 
 Let's first verify what version of GNU bash has been installed:
 
-``$ which -a bash
-/usr/local/bin/bash
-/bin/bash``
+``$ which -a bash``
+``/usr/local/bin/bash``
+``/bin/bash``````
 
 Here we see we have two bash binaries, so let's see what's happening.
 
-`$ /usr/local/bin/bash --version
-GNU bash, version 5.0.7(1)-release (x86_64-apple-darwin18.5.0)
-Copyright (C) 2019 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+`$ /usr/local/bin/bash --version``
+``GNU bash, version 5.0.7(1)-release (x86_64-apple-darwin18.5.0)``
+``Copyright (C) 2019 Free Software Foundation, Inc.``
+``License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
-This is free software; you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.`
+``This is free software; you are free to change and redistribute it.``
+``There is NO WARRANTY, to the extent permitted by law.`
 
 and
 
-``$ /bin/bash --version
-GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
-Copyright (C) 2007 Free Software Foundation, Inc.``
+``$ /bin/bash --version``
+``GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)``
+``Copyright (C) 2007 Free Software Foundation, Inc.``
 
 So it's clear here that `/bin/bash` is our stock version of GNU bash, supplied by Apple macOS. The version installed by `brew` is `/usr/local/bin/bash`.
 
@@ -96,13 +96,13 @@ As we've seen, you have two versions of GNU bash installed and these will happil
 
 When you write shell scripts, bare in mind you have two versions of bash installed and which version is which. In particular, keep close attention to the shebang of bash scripts:
 
-`#!/bin/bash
-echo $BASH_VERSION`
+`#!/bin/bash``
+``echo $BASH_VERSION`
 
 The above script looks basic enough but the shebang explicitly requests the stock version of GNU bash installed on macOS. This can be easily ovrercome by specifying `/usr/local/bin/bash` instead. However, a more elegant way is using the `/usr/bin/env` binary.
 
-`#!/usr/bin/env bash
-echo $BASH_VERSION`
+`#!/usr/bin/env bash``
+``echo $BASH_VERSION`
 
 This version of the same script leverages `/usr/bin/env` and requests the bash shell, which inspects the `PATH` environment variable and, as mentioned earlier, will find `/usr/local/bin/bash` before `/bin/bash`.
 
@@ -112,8 +112,8 @@ This version of the same script leverages `/usr/bin/env` and requests the bash s
 
 A colleague of mine asked why not simply delete the stock version of bash and symlink the new. This might look like the below. Please do not execute these:
 
-`$ sudo rm /bin/bash
-$ sudo ln -s /usr/local/bin/bash /bin/bash`
+`$ sudo rm /bin/bash``
+``$ sudo ln -s /usr/local/bin/bash /bin/bash`
 
 Whilst this idea attempts to remove the multiple version of GNU bash installed and shell scripts would in theory leverage a newer GNU bash, it presents another problem.
 
