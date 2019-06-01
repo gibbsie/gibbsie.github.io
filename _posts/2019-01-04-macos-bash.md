@@ -14,9 +14,11 @@ Apple laptop and desktops have remained a popular choice for developers. Being b
 
 This is a valid question to ask and you may be extremely comfortable with the stock version of bash that is installed by default with macOS. In macOS Mojave (10.14.5), the version of bash is:
 
-`$ /bin/bash --version``
-``GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)``
-``Copyright (C) 2007 Free Software Foundation, Inc.`
+{% highlight shell %}
+$ /bin/bash --version
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
+{% endhighlight %}
 
 As you can see from the output, the version installed is GNU bash v.3.2.57(1)-release. As the copyright clearly states, this version of GNU bash dates back to 2007. As it's currently 2019, a lot can happen in 12 years, especially in computing and security.
 
@@ -46,19 +48,23 @@ To install, you will first need to decide whether you are going to install GNU b
 
 Let's first verify what version of GNU bash has been installed:
 
-``$ which -a bash``
-``/usr/local/bin/bash``
-``/bin/bash``````
+{% highlight shell %}
+$ which -a bash
+/usr/local/bin/bash
+/bin/bash
+{% endhighlight %}
 
 Here we see we have two bash binaries, so let's see what's happening.
 
-`$ /usr/local/bin/bash --version``
-``GNU bash, version 5.0.7(1)-release (x86_64-apple-darwin18.5.0)``
-``Copyright (C) 2019 Free Software Foundation, Inc.``
-``License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+{% highlight shell %}
+$ /usr/local/bin/bash --version
+GNU bash, version 5.0.7(1)-release (x86_64-apple-darwin18.5.0)
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
-``This is free software; you are free to change and redistribute it.``
-``There is NO WARRANTY, to the extent permitted by law.`
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+{% endhighlight %}
 
 and
 
