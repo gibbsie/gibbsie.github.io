@@ -1,5 +1,5 @@
 ---
-title: Bourne Again: uplifting the macOS bash shell
+title: Bourne Again, uplifting the macOS bash shell
 date: 2019-01-04
 description: Upgrading macOS to have a later revision of bash shell
 categories:
