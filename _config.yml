@@ -6,7 +6,7 @@ url: "https://gibbsie.github.io"
 baseurl: "https://gibbsie.github.io"
 google_analytics_key:
 google_maps_javascript_api_key:
-disqus_shortname:
+disqus_shortname: gibbsie-github-io
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
@@ -48,16 +48,14 @@ paginate: 10
 paginate_path: "/blog/:num/"
 
 jekyll-archives:
-  enabled: ['categories']
+  enabled: ["categories"]
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       type: "posts"
     values:
       layout: "post"
@@ -69,13 +67,11 @@ defaults:
         content:
           width: 1500
           height: 2000
-  -
-    scope:
+  - scope:
       path: "contact-success.html"
     values:
       layout: "page"
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
@@ -99,5 +95,5 @@ social_icons:
   - RSS
 
 _comments:
-  description: Text shown when sharing on social media
-  blurb: Short bio or description of this person
+  description: Technical musing of Oliver Gibbs
+  blurb: Cloud SME specialising in cloud, DevSecOps, infrastructure, security & web apps.
