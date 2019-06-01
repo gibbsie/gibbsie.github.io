@@ -1,7 +1,7 @@
 ---
 title: Bourne Again, uplifting the macOS bash shell
 date: 2019-01-04
-description: Upgrading macOS to have a later revision of bash shell
+description: Upgrading macOS to a later revision of bash shell
 categories:
   - macOS
   - term
@@ -126,9 +126,9 @@ This version of the same script leverages `/usr/bin/env` and requests the bash s
 
 ![Link](https://source.unsplash.com/gtVrejEGdmM/1500x1000?a=.png)
 
-## Symlink
+## Delete old, Symlink new?
 
-A colleague of mine asked why not simply delete the stock version of bash and symlink the new. This might look like the below. Please do not execute these:
+I recall a colleague of mine once suggesting to delete the stock version of bash and symlink the new. This might look something like the below (please do not execute the below).
 
 {% highlight shell %}
 $ sudo rm /bin/bash
@@ -141,4 +141,4 @@ Apple macOS provides a built-in security feature called the [System Integrity Pr
 
 Of course SIP can be disabled, changes in `/bin` directory can then be made and SIP can then be enabled again. Apple even describe how to do it [here](https://developer.apple.com/library/archive/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html). It's up to you, but I personally prefer to leave the stock version present to prevent any Apple macOS update issues.
 
-Whichever you decide, enjoy using a recent GNU bash release on your macOS!
+Whichever you decide, enjoy using a recent GNU bash release on your macOS! You'll feel Bourne Again ...
