@@ -72,6 +72,7 @@ DEPENDENCIES
   jekyll-paginate (= 1.1.0)
   jekyll-seo-tag (= 2.5.0)
   jekyll-sitemap (= 1.2.0)
+  kramdown (>= 2.3.0)
 
 BUNDLED WITH
    2.2.4
